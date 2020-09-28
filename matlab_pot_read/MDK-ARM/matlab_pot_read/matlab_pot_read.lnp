@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"matlab_pot_read\startup_stm32f407xx.o"
+"matlab_pot_read\main.o"
+"matlab_pot_read\stm32f4xx_it.o"
+"matlab_pot_read\stm32f4xx_hal_msp.o"
+"matlab_pot_read\stm32f4xx_hal_adc.o"
+"matlab_pot_read\stm32f4xx_hal_adc_ex.o"
+"matlab_pot_read\stm32f4xx_hal_rcc.o"
+"matlab_pot_read\stm32f4xx_hal_rcc_ex.o"
+"matlab_pot_read\stm32f4xx_hal_flash.o"
+"matlab_pot_read\stm32f4xx_hal_flash_ex.o"
+"matlab_pot_read\stm32f4xx_hal_flash_ramfunc.o"
+"matlab_pot_read\stm32f4xx_hal_gpio.o"
+"matlab_pot_read\stm32f4xx_hal_dma_ex.o"
+"matlab_pot_read\stm32f4xx_hal_dma.o"
+"matlab_pot_read\stm32f4xx_hal_pwr.o"
+"matlab_pot_read\stm32f4xx_hal_pwr_ex.o"
+"matlab_pot_read\stm32f4xx_hal_cortex.o"
+"matlab_pot_read\stm32f4xx_hal.o"
+"matlab_pot_read\stm32f4xx_hal_exti.o"
+"matlab_pot_read\stm32f4xx_hal_tim.o"
+"matlab_pot_read\stm32f4xx_hal_tim_ex.o"
+"matlab_pot_read\stm32f4xx_hal_uart.o"
+"matlab_pot_read\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "matlab_pot_read\matlab_pot_read.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "matlab_pot_read.map" -o matlab_pot_read\matlab_pot_read.axf
